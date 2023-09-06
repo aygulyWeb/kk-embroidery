@@ -1,0 +1,16 @@
+@mixin blockFonts($fontSize, $fontFamily: serif, $fontColor, $fontTransform) {
+	font-size: $fontSize;
+	font-family: $fontFamily;
+	color: $fontColor;
+	text-transform: $fontTransform;
+}
+
+@mixin blockFlex($flex: flex, $justify) {
+	display: $flex;
+	justify-content: $justify;
+}
+
+@mixin blockSize($width, $height) {
+	width: $width;
+	height: $height;
+}

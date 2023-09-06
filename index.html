@@ -1,0 +1,950 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+	<link rel="stylesheet" href="css/normalize.css">
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+	<link rel="stylesheet" href="slick/css/slick.css">
+	<title>Lagom</title>
+</head>
+
+<body>
+
+	<header id="header" class="wrapper">
+		<div class="container">
+			<div class="header">
+				<div class="header__mobile">
+					<input type="radio" id="burger" class="header__menu-input" name="burger">
+					<label for="burger" class="header__menu-toggle">
+						<i class="fas fa-bars"></i>
+					</label>
+					<div class="header__menu">
+						<input type="radio" id="burger2" class="burger2__input" name="burger">
+						<label for="burger2" class="burger2__toggle">
+							<i class="fas fa-bars"></i>
+						</label>
+						<ul class="header__submenu">
+							<li class="header__list"><a href="#">home</a></li>
+						
+							<li class="header__list"><a href="#">gallery</a></li>
+							<li class="header__list"><a href="#">blog</a></li>
+							<li class="header__list"><a href="#">contact</a></li>
+						</ul>
+					</div>
+				</div>
+				<div class="header__logo">
+					<a href="#">lagom</a>
+				</div>
+				<div class="header__search">
+					<div class="header__search-icon">
+						<i class="fas fa-search"></i>
+					</div>
+					<form action="#">
+						<input class="header__input" type="search" placeholder="Search">
+					</form>
+				</div>
+				<div class="header__menu">
+					<ul class="header__submenu">
+						<li class="header__list"><a href="#">home</a></li>
+				
+						<li class="header__list"><a href="#">gallery</a></li>
+						<li class="header__list"><a href="#">blog</a></li>
+						<li class="header__list"><a href="#">contact</a></li>
+					</ul>
+				</div>
+				<div class="header__cart">
+					<div class="header__login">
+						<a href="#popup">login</a>
+					</div>
+					<div class="header__shop">
+						<a href="#"><i class="fas fa-shopping-bag"></i></a>
+					</div>
+				</div>
+			</div>
+			<div class="header__banner">
+				<div class="slider__wrap">
+					<div class="sliders">
+																	<div class="slider__item-image">
+								<img src="images/slide-1.jpg" alt="">
+							</div>
+							
+							<div class="slider__item-image">
+								<img src="images/slide-2.jpg" alt="">
+							</div>
+							<div class="slider__item-image">
+								<img src="images/slide-3.jpg" alt="">
+							</div>
+							<div class="slider__item-image">
+								<img src="images/slide-4.jpg" alt="">
+							</div>
+							<div class="slider__item-image">
+								<img src="images/slide-5.jpg" alt="">
+							</div>
+											</div>
+				</div>
+			</div>
+		</div>
+	</header>
+<!-- 
+	<div id="popup" class="popup">
+		<div class="popup__body">
+			<div class="popup__content">
+				<a href="#header" class="popup__close">
+					<i class="fas fa-times"></i>
+				</a>
+				<form action="#" class="popup__form">
+					<span class="popup__title">registration</span>
+					<div class="popup__login">
+						<label for="">login:</label>
+						<input type="text" placeholder="yayaya@gmail.com">
+						<span>*</span>
+					</div>
+					<div class="popup__password">
+						<label for="">password:</label>
+						<input type="password" placeholder="*****">
+						<span>*</span>
+					</div>
+					<div class="popup__buttons">
+						<input type="submit" value="Submit">
+						<input type="reset" value="Reset">
+					</div>
+				</form>
+			</div>
+		</div>
+	</div> -->
+
+
+	<main class="main">
+		<section class="container">
+			<!-- <div class="new-arrivels">
+				<div class="new-arrivels__heading">
+					<p>New arrivels</p>
+				</div>
+				<div class="new-arrivels__slider">
+					<div class="slider__product">
+						<div class="slider__product-pic">
+							<img src="images/new-arrivles_pic-1.webp" alt="">
+						</div>
+						<div class="slider__item-subtitle">
+							joanne blossom
+						</div>
+						<svg height="250" width="250" xmlns="http://www.w3.org/2000/svg">
+							<rect class="shape" height="250" width="250" />
+						</svg>
+					</div>
+					<div class="slider__product">
+						<div class="slider__product-pic">
+							<img src="images/new-arrivels__pic-2.webp" alt="">
+						</div>
+						<div class="slider__item-subtitle">
+							joanne blossom
+						</div>
+						<svg height="250" width="250" xmlns="http://www.w3.org/2000/svg">
+							<rect class="shape" height="250" width="250" />
+						</svg>
+					</div>
+					<div class="slider__product">
+						<div class="slider__product-pic">
+							<img src="images/new-arrivels__pic-3.webp" alt="">
+						</div>
+						<div class="slider__item-subtitle">
+							joanne blossom
+						</div>
+						<svg height="250" width="250" xmlns="http://www.w3.org/2000/svg">
+							<rect class="shape" height="250" width="250" />
+						</svg>
+					</div>
+					<div class="slider__product">
+						<div class="slider__product-pic">
+							<img src="images/new-arrivles_pic-1.webp" alt="">
+						</div>
+						<div class="slider__item-subtitle">
+							joanne blossom
+						</div>
+						<svg height="250" width="250" xmlns="http://www.w3.org/2000/svg">
+							<rect class="shape" height="250" width="250" />
+						</svg>
+					</div>
+					<div class="slider__product">
+						<div class="slider__product-pic">
+							<img src="images/new-arrivels__pic-2.webp" alt="">
+						</div>
+						<div class="slider__item-subtitle">
+							joanne blossom
+						</div>
+						<svg height="250" width="250" xmlns="http://www.w3.org/2000/svg">
+							<rect class="shape" height="250" width="250" />
+						</svg>
+					</div>
+					<div class="slider__product">
+						<div class="slider__product-pic">
+							<img src="images/new-arrivels__pic-3.webp" alt="">
+						</div>
+						<div class="slider__item-subtitle">
+							joanne blossom
+						</div>
+						<svg height="250" width="250" xmlns="http://www.w3.org/2000/svg">
+							<rect class="shape" height="250" width="250" />
+						</svg>
+					</div>
+					<div class="slider__product">
+						<div class="slider__product-pic">
+							<img src="images/new-arrivels__pic-3.webp" alt="">
+						</div>
+						<div class="slider__item-subtitle">
+							joanne blossom
+						</div>
+						<svg height="250" width="250" xmlns="http://www.w3.org/2000/svg">
+							<rect class="shape" height="250" width="250" />
+						</svg>
+					</div>
+					<div class="slider__product">
+						<div class="slider__product-pic">
+							<img src="images/new-arrivels__pic-3.webp" alt="">
+						</div>
+						<div class="slider__item-subtitle">
+							joanne blossom
+						</div>
+						<svg height="250" width="250" xmlns="http://www.w3.org/2000/svg">
+							<rect class="shape" height="250" width="250" />
+						</svg>
+					</div>
+				</div>
+
+			</div> -->
+
+
+			</div>
+		</section>
+
+		<!-- <section class="shine">
+			<div class="shine__border">
+				<img src="images/block-diamond.png" alt="">
+			</div>
+			<div class="shine__content">
+				<div class="shine__picture">
+					<img src="images/shine_diamond.png" alt="">
+				</div>
+				<div class="shine__article">
+					<p class="shine__title">shining diva fashion rose gold crystal</p>
+					<p class="shine__text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Esse a expedita
+						recusandae
+						dolores enim maiores placeat suscipit quam unde voluptatem! Tempora, impedit magnam cumque quis
+						rerum saepe, deserunt esse quasi soluta quae qui possimus? Voluptas ratione totam molestiae
+						impedit ipsum distinctio alias quidem deserunt cumque!</p>
+					<div class="shine__button">
+						<div class="shine__icon">
+							<i class="fas fa-long-arrow-alt-right"></i>
+						</div>
+						<a href="#">view the collection</a>
+						<svg xmlns="http://www.w3.org/2000/svg">
+							<rect class="shape" height="60" width="320" />
+						</svg>
+					</div>
+				</div>
+			</div>
+		</section> -->
+
+		<section class="container">
+			<div class="antique__sliders">
+
+				<div class="sliders__item">
+					<img class="pic" src="images/gallery-1.jpg" alt="#">
+				</div>
+
+				<div class="sliders__item">
+					<input type="radio" id="one" name="touch">
+					<label for="one" class="slider__toggle">
+						<img src="images/gallery-10.jpg" alt="#">
+						<span>flower bit brooch </span>
+						<span>diamond ring</span>
+						<span>$5500</span>
+					</label>
+
+					<div class="slider__post">
+						<input type="radio" id="postone" name="touch">
+						<label for="postone" class="slider__toggle"></label>
+						<div class="post__image"><img src="images/gallery-2.jpg" alt="#">
+						</div>
+						<div class="post__text">
+							<span class="post__title">love</span>
+							<span class="post__subtitle">ladies watches</span>
+							<div class="slider__item-button">
+								<div class="slider__item-icon">
+									<i class="fas fa-long-arrow-alt-right"></i>
+								</div>
+								<a href="#">ladies watches</a>
+								<svg height="60" width="250" xmlns="http://www.w3.org/2000/svg">
+									<rect class="shape" height="60" width="250" />
+								</svg>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="sliders__item">
+					<input type="radio" id="two" name="touch">
+					<label for="two" class="slider__toggle">
+						<img src="images/gallery-3.jpg" alt="#">
+						<span>flower bit brooch </span>
+						<span>diamond ring</span>
+						<span>$5500</span>
+					</label>
+
+					<div class="slider__post">
+						<input type="radio" id="posttwo" name="touch">
+						<label for="posttwo" class="slider__toggle"></label>
+						<div class="post__image"><img src="images/gallery-5.jpg" alt="#">
+						</div>
+						<div class="post__text">
+							<span class="post__title">love</span>
+							<span class="post__subtitle">ladies watches</span>
+							<div class="slider__item-button">
+								<div class="slider__item-icon">
+									<i class="fas fa-long-arrow-alt-right"></i>
+								</div>
+								<a href="#">ladies watches</a>
+								<svg height="60" width="250" xmlns="http://www.w3.org/2000/svg">
+									<rect class="shape" height="60" width="250" />
+								</svg>
+							</div>
+						</div>
+					</div>
+				</div>
+
+
+				<div class="sliders__item">
+					<input type="radio" id="three" name="touch">
+					<label for="three" class="slider__toggle">
+						<img src="images/gallery-6.jpg" alt="#">
+						<span>flower bit brooch </span>
+						<span>diamond ring</span>
+						<span>$5500</span>
+					</label>
+
+					<div class="slider__post">
+						<input type="radio" id="postthree" name="touch">
+						<label for="postthree" class="slider__toggle"></label>
+						<div class="post__image"><img src="images/gallery-7.jpg" alt="#">
+						</div>
+						<div class="post__text">
+							<span class="post__title">love</span>
+							<span class="post__subtitle">ladies watches</span>
+							<div class="slider__item-button">
+								<div class="slider__item-icon">
+									<i class="fas fa-long-arrow-alt-right"></i>
+								</div>
+								<a href="#">ladies watches</a>
+								<svg height="60" width="250" xmlns="http://www.w3.org/2000/svg">
+									<rect class="shape" height="60" width="250" />
+								</svg>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="sliders__item">
+					<input type="radio" id="four" name="touch">
+					<label for="four" class="slider__toggle">
+						<img src="images/gallery-8.jpg" alt="#">
+						<span>flower bit brooch </span>
+						<span>diamond ring</span>
+						<span>$5500</span>
+					</label>
+
+					<div class="slider__post">
+						<input type="radio" id="postfour" name="touch">
+						<label for="postfour" class="slider__toggle"></label>
+						<div class="post__image"><img src="images/antique_collection_6.webp" alt="#">
+						</div>
+						<div class="post__text">
+							<span class="post__title">love</span>
+							<span class="post__subtitle">ladies watches</span>
+							<div class="slider__item-button">
+								<div class="slider__item-icon">
+									<i class="fas fa-long-arrow-alt-right"></i>
+								</div>
+								<a href="#">ladies watches</a>
+								<svg height="60" width="250" xmlns="http://www.w3.org/2000/svg">
+									<rect class="shape" height="60" width="250" />
+								</svg>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="sliders__item">
+					<input type="radio" id="five" name="touch">
+					<label for="five" class="slider__toggle">
+						<img src="images/gallery-9.jpg" alt="#">
+						<span>flower bit brooch </span>
+						<span>diamond ring</span>
+						<span>$5500</span>
+					</label>
+
+					<div class="slider__post">
+						<input type="radio" id="postfive" name="touch">
+						<label for="postfive" class="slider__toggle"></label>
+						<div class="post__image"><img src="images/antique_collection_6.webp" alt="#">
+						</div>
+						<div class="post__text">
+							<span class="post__title">love</span>
+							<span class="post__subtitle">ladies watches</span>
+							<div class="slider__item-button">
+								<div class="slider__item-icon">
+									<i class="fas fa-long-arrow-alt-right"></i>
+								</div>
+								<a href="#">ladies watches</a>
+								<svg height="60" width="250" xmlns="http://www.w3.org/2000/svg">
+									<rect class="shape" height="60" width="250" />
+								</svg>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="sliders__item">
+					<img class="pic" src="images/gallery-1.jpg" alt="#">
+				</div>
+
+				<div class="sliders__item">
+					<input type="radio" id="six" name="touch">
+					<label for="six" class="slider__toggle">
+						<img src="images/gallery-2.jpg" alt="#">
+						<span>flower bit brooch </span>
+						<span>diamond ring</span>
+						<span>$5500</span>
+					</label>
+
+					<div class="slider__post">
+						<input type="radio" id="postsix" name="touch">
+						<label for="postsix" class="slider__toggle"></label>
+						<div class="post__image"><img src="images/antique_collection_6.webp" alt="#">
+						</div>
+						<div class="post__text">
+							<span class="post__title">love</span>
+							<span class="post__subtitle">ladies watches</span>
+							<div class="slider__item-button">
+								<div class="slider__item-icon">
+									<i class="fas fa-long-arrow-alt-right"></i>
+								</div>
+								<a href="#">ladies watches</a>
+								<svg height="60" width="250" xmlns="http://www.w3.org/2000/svg">
+									<rect class="shape" height="60" width="250" />
+								</svg>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="sliders__item">
+					<input type="radio" id="seven" name="touch">
+					<label for="seven" class="slider__toggle">
+						<img src="images/gallery-3.jpg" alt="#">
+						<span>flower bit brooch </span>
+						<span>diamond ring</span>
+						<span>$5500</span>
+					</label>
+
+					<div class="slider__post">
+						<input type="radio" id="postseven" name="touch">
+						<label for="postseven" class="slider__toggle"></label>
+						<div class="post__image"><img src="images/antique_collection_6.webp" alt="#">
+						</div>
+						<div class="post__text">
+							<span class="post__title">love</span>
+							<span class="post__subtitle">ladies watches</span>
+							<div class="slider__item-button">
+								<div class="slider__item-icon">
+									<i class="fas fa-long-arrow-alt-right"></i>
+								</div>
+								<a href="#">ladies watches</a>
+								<svg height="60" width="250" xmlns="http://www.w3.org/2000/svg">
+									<rect class="shape" height="60" width="250" />
+								</svg>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="sliders__item">
+					<input type="radio" id="eight" name="touch">
+					<label for="eight" class="slider__toggle">
+						<img src="images/gallery-5.jpg" alt="#">
+						<span>flower bit brooch </span>
+						<span>diamond ring</span>
+						<span>$5500</span>
+					</label>
+
+					<div class="slider__post">
+						<input type="radio" id="posteight" name="touch">
+						<label for="posteight" class="slider__toggle"></label>
+						<div class="post__image"><img src="images/antique_collection_6.webp" alt="#">
+						</div>
+						<div class="post__text">
+							<span class="post__title">love</span>
+							<span class="post__subtitle">ladies watches</span>
+							<div class="slider__item-button">
+								<div class="slider__item-icon">
+									<i class="fas fa-long-arrow-alt-right"></i>
+								</div>
+								<a href="#">ladies watches</a>
+								<svg height="60" width="250" xmlns="http://www.w3.org/2000/svg">
+									<rect class="shape" height="60" width="250" />
+								</svg>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="sliders__item">
+					<input type="radio" id="nine" name="touch">
+					<label for="nine" class="slider__toggle">
+						<img src="images/gallery-6.jpg" alt="#">
+						<span>flower bit brooch </span>
+						<span>diamond ring</span>
+						<span>$5500</span>
+					</label>
+
+					<div class="slider__post">
+						<input type="radio" id="postnine" name="touch">
+						<label for="postnine" class="slider__toggle"></label>
+						<div class="post__image"><img src="images/antique_collection_6.webp" alt="#">
+						</div>
+						<div class="post__text">
+							<span class="post__title">love</span>
+							<span class="post__subtitle">ladies watches</span>
+							<div class="slider__item-button">
+								<div class="slider__item-icon">
+									<i class="fas fa-long-arrow-alt-right"></i>
+								</div>
+								<a href="#">ladies watches</a>
+								<svg height="60" width="250" xmlns="http://www.w3.org/2000/svg">
+									<rect class="shape" height="60" width="250" />
+								</svg>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="sliders__item">
+					<input type="radio" id="ten" name="touch">
+					<label for="ten" class="slider__toggle">
+						<img src="images/gallery-7.jpg" alt="#">
+						<span>flower bit brooch </span>
+						<span>diamond ring</span>
+						<span>$5500</span>
+					</label>
+
+					<div class="slider__post">
+						<input type="radio" id="postten" name="touch">
+						<label for="postten" class="slider__toggle"></label>
+						<div class="post__image"><img src="images/antique_collection_6.webp" alt="#">
+						</div>
+						<div class="post__text">
+							<span class="post__title">love</span>
+							<span class="post__subtitle">ladies watches</span>
+							<div class="slider__item-button">
+								<div class="slider__item-icon">
+									<i class="fas fa-long-arrow-alt-right"></i>
+								</div>
+								<a href="#">ladies watches</a>
+								<svg height="60" width="250" xmlns="http://www.w3.org/2000/svg">
+									<rect class="shape" height="60" width="250" />
+								</svg>
+							</div>
+						</div>
+					</div>
+				</div>
+
+
+				<div class="sliders__item">
+					<img class="pic" src="images/gallery-8.jpg" alt="#">
+				</div>
+
+				<div class="sliders__item">
+					<input type="radio" id="one1" name="touch">
+					<label for="one1" class="slider__toggle">
+						<img src="images/gallery-9.jpg" alt="#">
+						<span>flower bit brooch </span>
+						<span>diamond ring</span>
+						<span>$5500</span>
+					</label>
+
+					<div class="slider__post">
+						<input type="radio" id="postone1" name="touch">
+						<label for="postone1" class="slider__toggle"></label>
+						<div class="post__image"><img src="images/antique_collection_6.webp" alt="#">
+						</div>
+						<div class="post__text">
+							<span class="post__title">love</span>
+							<span class="post__subtitle">ladies watches</span>
+							<div class="slider__item-button">
+								<div class="slider__item-icon">
+									<i class="fas fa-long-arrow-alt-right"></i>
+								</div>
+								<a href="#">ladies watches</a>
+								<svg height="60" width="250" xmlns="http://www.w3.org/2000/svg">
+									<rect class="shape" height="60" width="250" />
+								</svg>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="sliders__item">
+					<input type="radio" id="two2" name="touch">
+					<label for="two2" class="slider__toggle">
+						<img src="images/gallery-10.jpg" alt="#">
+						<span>flower bit brooch </span>
+						<span>diamond ring</span>
+						<span>$5500</span>
+					</label>
+
+					<div class="slider__post">
+						<input type="radio" id="posttwo2" name="touch">
+						<label for="posttwo2" class="slider__toggle"></label>
+						<div class="post__image"><img src="images/antique_collection_6.webp" alt="#">
+						</div>
+						<div class="post__text">
+							<span class="post__title">love</span>
+							<span class="post__subtitle">ladies watches</span>
+							<div class="slider__item-button">
+								<div class="slider__item-icon">
+									<i class="fas fa-long-arrow-alt-right"></i>
+								</div>
+								<a href="#">ladies watches</a>
+								<svg height="60" width="250" xmlns="http://www.w3.org/2000/svg">
+									<rect class="shape" height="60" width="250" />
+								</svg>
+							</div>
+						</div>
+					</div>
+				</div>
+
+
+				<div class="sliders__item">
+					<input type="radio" id="three3" name="touch">
+					<label for="three3" class="slider__toggle">
+						<img src="images/gallery-1.jpg" alt="#">
+						<span>flower bit brooch </span>
+						<span>diamond ring</span>
+						<span>$5500</span>
+					</label>
+
+					<div class="slider__post">
+						<input type="radio" id="postthree3" name="touch">
+						<label for="postthree3" class="slider__toggle"></label>
+						<div class="post__image"><img src="images/antique_collection_6.webp" alt="#">
+						</div>
+						<div class="post__text">
+							<span class="post__title">love</span>
+							<span class="post__subtitle">ladies watches</span>
+							<div class="slider__item-button">
+								<div class="slider__item-icon">
+									<i class="fas fa-long-arrow-alt-right"></i>
+								</div>
+								<a href="#">ladies watches</a>
+								<svg height="60" width="250" xmlns="http://www.w3.org/2000/svg">
+									<rect class="shape" height="60" width="250" />
+								</svg>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="sliders__item">
+					<input type="radio" id="four4" name="touch">
+					<label for="four4" class="slider__toggle">
+						<img src="images/gallery-2.jpg" alt="#">
+						<span>flower bit brooch </span>
+						<span>diamond ring</span>
+						<span>$5500</span>
+					</label>
+
+					<div class="slider__post">
+						<input type="radio" id="postfour4" name="touch">
+						<label for="postfour4" class="slider__toggle"></label>
+						<div class="post__image"><img src="images/antique_collection_6.webp" alt="#">
+						</div>
+						<div class="post__text">
+							<span class="post__title">love</span>
+							<span class="post__subtitle">ladies watches</span>
+							<div class="slider__item-button">
+								<div class="slider__item-icon">
+									<i class="fas fa-long-arrow-alt-right"></i>
+								</div>
+								<a href="#">ladies watches</a>
+								<svg height="60" width="250" xmlns="http://www.w3.org/2000/svg">
+									<rect class="shape" height="60" width="250" />
+								</svg>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="sliders__item">
+					<input type="radio" id="five5" name="touch">
+					<label for="five5" class="slider__toggle">
+						<img src="images/gallery-3.jpg" alt="#">
+						<span>flower bit brooch </span>
+						<span>diamond ring</span>
+						<span>$5500</span>
+					</label>
+
+					<div class="slider__post">
+						<input type="radio" id="postfive5" name="touch">
+						<label for="postfive5" class="slider__toggle"></label>
+						<div class="post__image"><img src="images/antique_collection_6.webp" alt="#">
+						</div>
+						<div class="post__text">
+							<span class="post__title">love</span>
+							<span class="post__subtitle">ladies watches</span>
+							<div class="slider__item-button">
+								<div class="slider__item-icon">
+									<i class="fas fa-long-arrow-alt-right"></i>
+								</div>
+								<a href="#">ladies watches</a>
+								<svg height="60" width="250" xmlns="http://www.w3.org/2000/svg">
+									<rect class="shape" height="60" width="250" />
+								</svg>
+							</div>
+						</div>
+					</div>
+				</div>
+
+			</div>
+
+		</section>
+
+		<!-- <section class="container">
+			<div class="best">
+				<div class="best__article">
+					<div class="best__article-text">
+						<p class="best__title">You deserve only the best on the biggest day </p>
+						<p class="best__subtitle">Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero
+							necessitatibus incidunt qui minus hic velit!</p>
+					</div>
+					<div class="best__article-slider">
+						<div class="best__sliders">
+							<div class="slider__item-best">
+								<img src="images/beston-2.webp" alt="">
+								<p class="slider__title">ruby emerald</p>
+							</div>
+							<div class="slider__item-best">
+								<img src="images/beston-1.webp" alt="">
+								<p class="slider__title">ruby emerald</p>
+							</div>
+							<div class="slider__item-best">
+								<img src="images/beston-3.webp" alt="">
+								<p class="slider__title">ruby emerald</p>
+							</div>
+							<div class="slider__item-best">
+								<img src="images/beston-2.webp" alt="">
+								<p class="slider__title">ruby emerald</p>
+							</div>
+							<div class="slider__item-best">
+								<img src="images/beston-1.webp" alt="">
+								<p class="slider__title">ruby emerald</p>
+							</div>
+							<div class="slider__item-best">
+								<img src="images/beston-3.webp" alt="">
+								<p class="slider__title">ruby emerald</p>
+							</div>
+
+						</div>
+					</div>
+				</div>
+
+			</div>
+		</section> -->
+
+		<section class="blog-wrap">
+			<div class="container">
+				<div class="blog">
+					<div class="blog__heading">
+						<p>blog updates</p>
+					</div>
+					<div class="blog__content">
+						<div class="blog__main">
+							<div class="blog__image"><img src="images/blog.jpg" alt=""></div>
+							<div class="blog__text">
+								<p>There are many variations of passages of Lorem Ipsum</p>
+								<p>december 2017</p>
+							</div>
+						</div>
+						<div class="blog__column">
+							<div class="blog__item">
+								<div class="blog__block">
+									<div class="blog__image">
+										<img src="images/blog-2.jpg" alt="">
+									</div>
+									<div class="blog__subtitle">
+										<p>There are many variations</p>
+									</div>
+								</div>
+								<div class="blog__block">
+									<div class="blog__image">
+										<img src="images/blog-3.jpg" alt="">
+									</div>
+									<div class="blog__subtitle">
+										<p>There are many variations</p>
+									</div>
+								</div>
+							</div>
+							<div class="blog__item">
+								<div class="blog__block">
+									<div class="blog__image"><img src="images/blog-4.jpg" alt=""></div>
+									<div class="blog__subtitle">
+										<p> If you are going to use </p>
+									</div>
+								</div>
+								<div class="blog__block">
+									<div class="blog__image">
+										<img src="images/blog-5.jpg" alt="">
+									</div>
+									<div class="blog__subtitle">
+										<p> If you are going to use </p>
+									</div>
+								</div>
+
+							</div>
+						</div>
+					</div>
+					<div class="blog__button">
+						<div class="blog__icon">
+							<i class="fas fa-long-arrow-alt-right"></i>
+						</div>
+						<a href="#">visit blog</a>
+						<svg xmlns="http://www.w3.org/2000/svg">
+							<rect class="shape" height="60" width="250" />
+						</svg>
+					</div>
+				</div>
+			</div>
+		</section>
+<!-- 
+		<section class="address">
+			<div class="address__diamond-icon">
+				<img src="images/color-diamond.webp" alt="">
+			</div>
+			<div class="address__text">
+				<p class="address__title">next</p>
+				<p class="address__author">designer jewellery</p>
+				<p class="address__street">71 pilgrim avenue chevy chase, md 20815</p>
+				<div class="address__phone"><i class="fas fa-phone-alt"></i><a href="tel:125 546-4478">125 546-4478</a>.
+				</div>
+			</div>
+			<div class="newsletter">
+				<div class="newsletter__message">
+					<i class="far fa-envelope"></i>
+					<input type="text" placeholder="Enter email to subscribe newsletter">
+				</div>
+				<div class="newsletter__button">
+					<a href="#">subscribe</a>
+				</div>
+			</div>
+		</section> -->
+	</main>
+
+	<!-- <footer class="footer">
+		<div class="container">
+			<div class="footer__content">
+				<div class="footer__shop">
+					<div class="footer__shop-title">
+						<p>shop now</p>
+						<div class="footer__shop-blok">
+							<div class="shop__list">
+								<ul class="shop__list">
+									<li><a href="">women's jewelry</a></li>
+									<li><a href="">men's jewelry</a></li>
+									<li><a href="">diamond</a></li>
+									<li><a href="">gold</a></li>
+									<li><a href="">silver</a></li>
+								</ul>
+							</div>
+							<div class="shop__list">
+								<ul class="shop__list">
+									<li><a href="">collections</a></li>
+									<li><a href="">gifts</a></li>
+									<li><a href="">manibag</a></li>
+									<li><a href="">offers</a></li>
+								</ul>
+							</div>
+
+						</div>
+					</div>
+				</div>
+				<div class="footer__about">
+					<div class="footer__about-title">
+						<p>about us</p>
+						<div class="footer__about-blok">
+							<ul>
+								<li class="about__list"><a href="">about us</a></li>
+								<li class="about__list"><a href="">nexa core values</a></li>
+								<li class="about__list"><a href="">affiliate program</a></li>
+								<li class="about__list"><a href="">work with us</a></li>
+								<li class="about__list"><a href="">in the media</a></li>
+							</ul>
+							<ul>
+								<li class="about__list"><a href="">payment options</a></li>
+								<li class="about__list"><a href="">bulk olders</a></li>
+								<li class="about__list"><a href="">international orders</a></li>
+								<li class="about__list"><a href="">contact us</a></li>
+								<li class="about__list"><a href="">copyright</a></li>
+							</ul>
+							<ul class="social__icons-block">
+								<li class="social__icons"><a href="https://www.facebook.com/" target="blank">
+										<i class="fab fa-facebook-square"></i>
+										<span>facebook</span></a>
+								</li>
+								<li class="social__icons"><a href="https://www.twitter.com/" target="blank">
+										<i class="fab fa-twitter"></i>
+										<span>twitter</span></a>
+								</li>
+								<li class="social__icons"><a href="https://www.instagram.com/" target="blank">
+										<i class="fab fa-instagram"></i>
+										<span>instagram</span></a>
+								</li>
+								<li class="social__icons"><a href="https://www.youtube.com/" target="blank">
+										<i class="fab fa-youtube"></i>
+										<span>youtube</span></a>
+								</li>
+								<li class="social__icons"><a href="https://www.vmeo.com/" target="blank">
+										<i class="fab fa-vimeo-square"></i>
+										<span>vmeo</span></a>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="footer__copyright">
+				<div class="footer__payment-carts">
+					<ul class="carts">
+						<li><a href=""><i class="fab fa-cc-visa"></i></a></li>
+						<li><a href=""><i class="fab fa-cc-mastercard"></i></a></li>
+						<li><a href=""><i class="fab fa-cc-discover"></i></a></li>
+						<li><a href=""><i class="fab fa-cc-amex"></i></a></li>
+						<li><a href=""><i class="fab fa-cc-paypal"></i></a></li>
+					</ul>
+				</div>
+				<div class="footer__copr">
+					<span>All rights reserved | &copy 2017 Lagom Jewelry </span>
+				</div>
+			</div>
+		</div>
+	</footer> -->
+
+
+	<script src="slick/js/jquery-3.3.1.js"></script>
+	<script src="slick/js/jquery-migrate-3.1.0.js"></script>
+	<script src="slick/js/slick.min.js"></script>
+
+	<script src="js/script.js"></script>
+
+</body>
+
+</html>

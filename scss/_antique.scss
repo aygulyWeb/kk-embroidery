@@ -1,0 +1,234 @@
+@import "_variables";
+@import "_mixins";
+@import "_extends";
+@import "_fonts";
+
+.container {
+	max-width: 1170px;
+	margin: 0 auto;
+}
+
+.antique__sliders {
+	padding-top: 103px;
+
+	.dots-style li[class="slick-active"] button {
+		color: #808080;
+
+		&:before {
+			content: "";
+			position: absolute;
+			top: 23px;
+			left: 30px;
+			width: 20px;
+			height: 2px;
+			background-color: #808080;
+		}
+	}
+	.dots-style {
+		padding-top: 50px;
+		padding-left: 25px;
+		display: flex;
+		justify-content: flex-end;
+		position: relative;
+		& button {
+			position: absolute;
+			top: 0px;
+			left: 0;
+			border: none;
+			outline: none;
+			height: 0;
+			@include blockFonts(18px, $headerListfont, #a6a6a6, uppercase);
+			position: relative;
+			cursor: pointer;
+			padding-left: 35px;
+		}
+	}
+
+	.sliders__item {
+		position: relative;
+		max-width: 100%;
+		height: 369px;
+		overflow: hidden;
+		border: 1px solid #ccc;
+
+		.dots-style li[class="slick-active"] button {
+			color: #fff;
+
+			&:before {
+				content: "";
+				position: absolute;
+				top: 23px;
+				left: -5px;
+				width: 20px;
+				height: 2px;
+				background-color: #fff;
+			}
+		}
+
+		.dots-style {
+			max-width: 100px;
+			display: flex;
+			justify-content: flex-end;
+			position: relative;
+
+			& button {
+				position: absolute;
+				top: 25px;
+				left: 0;
+				border: none;
+				outline: none;
+				height: 0;
+				@include blockFonts(18px, $headerListfont, #999, uppercase);
+
+				position: relative;
+				cursor: pointer;
+			}
+		}
+
+		img {
+			max-width: 100%;
+			min-height: 100%;
+			display: block;
+			overflow: hidden;
+			object-fit: contain;
+		}
+
+		.slider__toggle {
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
+			align-items: center;
+
+			img {
+				padding-top: 40px;
+				min-height: 100%;
+				max-width: 100%;
+				display: block;
+				overflow: hidden;
+				object-fit: contain;
+			}
+
+			span:nth-of-type(1) {
+				padding-top: 10px;
+				@include blockFonts(22px, $headerListfont, #000, capitalize);
+			}
+			span:nth-of-type(2) {
+				padding-top: 5px;
+				@include blockFonts(17px, $headerListfont, $antiquePricecolorlight, capitalize);
+			}
+			span:nth-of-type(3) {
+				padding-top: 25px;
+				@include blockFonts(21px, $antiquePricefont, $antiquePricecolor, capitalize);
+			}
+		}
+	}
+
+	input {
+		display: none;
+	}
+
+	.post__image {
+		position: relative;
+	}
+
+	.post__text {
+		position: absolute;
+		top: 20%;
+		left: 20%;
+
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+
+		.post__title {
+			@include blockFonts(50px, $sliderpostFont, #fff, capitalize);
+		}
+
+		.post__subtitle {
+			padding-top: 5px;
+			@include blockFonts(25px, $headerBannertitleFont, #fff, capitalize);
+		}
+
+		.slider__item-button {
+			margin-top: 75px;
+			padding-left: 10px;
+			display: flex;
+			justify-content: space-around;
+			align-items: center;
+			position: relative;
+			width: 250px;
+			cursor: pointer;
+
+			a {
+				@include blockFonts(18px, $headerBannerbtnFont, $headerTextcolor, uppercase);
+			}
+			i {
+				color: #fff;
+			}
+
+			svg {
+				position: absolute;
+				height: 60px;
+				width: 250px;
+			}
+
+			.shape {
+				stroke-dasharray: 250 250;
+				stroke-dashoffset: -420;
+				stroke-width: 3px;
+				fill: transparent;
+				stroke: #fff;
+				border-bottom: 5px solid black;
+				transition: stroke-width 0.5s, stroke-dasharray 0.5s;
+			}
+
+			&:hover .shape {
+				stroke-width: 3px;
+				stroke-dasharray: 530 0;
+			}
+		}
+	}
+
+	input:hover ~ .slider__post {
+		transform: translateY(0%);
+	}
+
+	.slider__post {
+		position: absolute;
+		width: 100%;
+		height: 100%;
+		top: 0;
+		left: 0;
+		transition: 0.5s linear;
+		transform: translateY(100%);
+
+		&:hover {
+			transform: translateY(0%);
+		}
+	}
+}
+
+@media (min-width: 320px) and (max-width: 480px) {
+	.sliders__item {
+		img {
+			margin: 0 auto;
+		}
+	}
+}
+
+@media (min-width: 481px) and (max-width: 767px) {
+	.sliders__item {
+		img {
+			margin: 0 auto;
+		}
+	}
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+	.sliders__item {
+		img {
+			margin: 0 auto;
+		}
+	}
+}

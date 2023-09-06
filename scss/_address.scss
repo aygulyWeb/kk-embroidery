@@ -1,0 +1,163 @@
+@import "_variables";
+@import "_mixins";
+@import "_extends";
+@import "_fonts";
+
+.address {
+	padding-bottom: 82px;
+	background: url("..//images/bg-pearls.webp") no-repeat;
+	background-size: cover;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	position: relative;
+
+	&__diamond-icon {
+		position: absolute;
+		top: -42px;
+	}
+
+	&__text {
+		text-align: center;
+		padding-top: 30px;
+	}
+
+	&__title {
+		padding-top: 30px;
+
+		@include blockFonts(38px, $headerBannerbtnFont, #fff, capitalize);
+	}
+
+	&__author {
+		padding-top: 20px;
+		@include blockFonts(20px, $headerBannerbtnFont, $addressTitlecolor, capitalize);
+	}
+
+	&__street {
+		padding-top: 16px;
+		@include blockFonts(18px, $headerBannerbtnFont, $addressTitlecolor, capitalize);
+	}
+	&__phone {
+		padding-top: 20px;
+
+		i {
+			margin-right: 8px;
+			padding: 10px;
+			background-color: #484848;
+			border-radius: 50%;
+			opacity: 0.5;
+			color: #fff;
+		}
+		a {
+			@include blockFonts(15px, $headerBannerbtnFont, $addressTitlecolor, capitalize);
+		}
+	}
+
+	.newsletter {
+		display: flex;
+		justify-content: space-between;
+		position: absolute;
+		top: 90%;
+		width: 600px;
+		min-height: 63px;
+		background-color: #fff;
+		box-shadow: 0 0 10px #999;
+
+		&__message {
+			display: flex;
+			align-items: center;
+			padding-left: 20px;
+
+			i {
+				color: #999;
+			}
+			input {
+				width: 100%;
+				padding-left: 20px;
+				outline: none;
+				border: none;
+				caret-color: #999;
+			}
+			input::-webkit-input-placeholder {
+				@include blockFonts(16px, $headerSearchfont, $addressTitlecolor, capitalize);
+			}
+		}
+		&__button {
+			padding-top: 26px;
+			padding-left: 27px;
+			padding-right: 27px;
+			background-color: $wrapperBg;
+			a {
+				text-align: center;
+				@include blockFonts(15px, $headerBannerbtnFont, #fff, uppercase);
+			}
+		}
+	}
+}
+
+@media (min-width: 320px) and (max-width: 481px) {
+	.newsletter {
+		max-width: 300px;
+		&__message {
+			padding-left: 5px;
+
+			i {
+				display: none;
+			}
+			input {
+				padding-left: 5px;
+			}
+		}
+	}
+}
+
+@media (min-width: 481px) and (max-width: 767px) {
+	.newsletter {
+		max-width: 400px;
+		&__message {
+			padding-left: 5px;
+
+			i {
+				display: none;
+			}
+			input {
+				padding-left: 5px;
+			}
+		}
+		&__button {
+			padding: 5px;
+		}
+	}
+
+	.address__title {
+		@include blockFonts(30px, $headerBannerbtnFont, #fff, capitalize);
+	}
+
+	.address__author {
+		@include blockFonts(18px, $headerBannerbtnFont, $addressTitlecolor, capitalize);
+	}
+
+	.address__street {
+		@include blockFonts(16px, $headerBannerbtnFont, $addressTitlecolor, capitalize);
+	}
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+	.newsletter {
+		max-width: 500px;
+		&__message {
+			padding: 5px;
+
+			i {
+				display: block;
+				padding-left: 5px;
+			}
+			input {
+				padding-left: 5px;
+			}
+		}
+		&__button {
+			padding: 5px;
+		}
+	}
+}

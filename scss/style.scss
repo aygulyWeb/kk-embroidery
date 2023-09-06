@@ -1,0 +1,36 @@
+@import "_header";
+@import "new-arrivels";
+@import "_shine";
+@import "_antique";
+@import "_best";
+@import "_blog";
+@import "_address";
+@import "_footer";
+
+@import "_variables";
+@import "_mixins";
+@import "_extends";
+@import "_fonts";
+
+@import "./media/mediaadaptiv";
+
+.wrapper {
+	max-width: 100%;
+	background: url("..//images/bg-color.png") no-repeat;
+	background-size: cover;
+}
+
+.container {
+	max-width: 1170px;
+	margin: 0 auto;
+}
+
+a {
+	text-decoration: none;
+}
+li {
+	list-style-type: none;
+}
+input {
+	outline: none;
+}
